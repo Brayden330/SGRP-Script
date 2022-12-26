@@ -87,6 +87,35 @@ game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:Invoke
 })
 
 Tab:AddButton({
+	Name = "Racist Cake",
+	Callback = function()
+local args = {
+    [1] = ";shirt me 6479702245"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(1.5)
+local args = {
+    [1] = ";pants me 6481224170"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(1.5)
+local args = {
+    [1] = ";hat me 6472556328"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(1.5)
+local args = {
+    [1] = ";name me Racist Cake"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+end
+})
+
+Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
