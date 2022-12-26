@@ -100,4 +100,11 @@ pcall(function() loadstring(game:GetObjects("rbxassetid://10572164822")[1].Sourc
 end
 })
 
+Tab:AddButton({
+	Name = "Destroy Snowy Utilites",
+	Callback = function()
+OrionLib:Destroy()
+end
+})
+
 OrionLib:Init()
