@@ -116,6 +116,46 @@ end
 })
 
 Tab:AddButton({
+	Name = "Guard Suit",
+	Callback = function()
+local args = {
+    [1] = ";face me 616380929"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(1.5)
+local args = {
+    [1] = ";shirt me 3579400232"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(1.5)
+local args = {
+    [1] = ";pants me 3214476242"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(1.5)
+local args = {
+    [1] = ";hat me 6712122494"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+wait(1.5)
+local args = {
+    [1] = ";hat me 1309911"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+local args = {
+    [1] = ";name me Guard"
+}
+
+game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+  	end    
+})
+
+Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
